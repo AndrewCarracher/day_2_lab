@@ -61,28 +61,29 @@ class FunctionsTest < MiniTest::Test
     result = number_to_full_month_name( 9 )
     assert_equal( "September", result )
   end
-  #
-  # def test_substring__month_1()
-  #   first_month_string = number_to_short_month_name( 1 )
-  #   assert_equal( "Jan", first_month_string )
-  # end
-  #
-  # def test_substring__month_4()
-  #   fourth_month_string = number_to_short_month_name( 4 )
-  #   assert_equal( "Apr", fourth_month_string )
-  # end
-  #
-  # def test_substring__month_10()
-  #   tenth_month_string = number_to_short_month_name( 10 )
-  #   assert_equal( "Oct", tenth_month_string )
-  # end
-  #
-  # #Further
-  #
-  # #Given the length of a side of a cube calculate the volume
-  # def test_volume_of_cube()
-  #   #add test code here
-  # end
+
+  def test_substring__month_1()
+    first_month_string = number_to_short_month_name( 1 )
+    assert_equal( "Jan", first_month_string )
+  end
+
+  def test_substring__month_4()
+    fourth_month_string = number_to_short_month_name( 4 )
+    assert_equal( "Apr", fourth_month_string )
+  end
+
+  def test_substring__month_10()
+    tenth_month_string = number_to_short_month_name( 10 )
+    assert_equal( "Oct", tenth_month_string )
+  end
+
+  #Further
+
+  #Given the length of a side of a cube calculate the volume
+  def test_volume_of_cube()
+    results = volume_of_cube(5)
+    assert_equal( 125, results)
+  end
   #
   # #Given the radius of a sphere calculate the volume
   # def test_volume_of_sphere()

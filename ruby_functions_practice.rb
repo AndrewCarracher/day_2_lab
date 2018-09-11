@@ -58,3 +58,12 @@ def number_to_full_month_name( i )
     return "December"
   end
 end
+
+def number_to_short_month_name( i )
+example = number_to_full_month_name( i )
+return example[0..2]
+end
+
+def volume_of_cube( x )
+  return x ** 3
+end
