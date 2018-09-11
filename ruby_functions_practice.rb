@@ -67,3 +67,14 @@ end
 def volume_of_cube( x )
   return x ** 3
 end
+
+def volume_of_sphere( r )
+  a = 4.0 / 3
+  b = Math::PI
+  c = r ** 3
+  return a * b * c
+end
+
+def temp( t)
+ return (t - 32) / 1.8
+end
